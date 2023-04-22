@@ -1,0 +1,173 @@
+body{
+  background-color: black;
+  color: white;
+}
+
+body h1{
+  color: rgba(255, 0, 0);
+  font-size: xx-large;
+}
+
+body h4{
+  color: rgba(255, 0, 0);
+  font-size: large;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+#navigation-bar{
+  padding: 7px;
+  text-align: justify;
+}
+
+.links{
+  width: 30%;
+  float: right;
+  font-size: 1.8em;
+}
+
+#link-portifolio{
+  color: rgba(255, 0, 0);
+}
+
+#link-contato{
+  color: rgba(255, 0, 0);
+}
+
+.typewriter h2 {
+  width: 69%;
+  float: left; 
+  color: rgba(255, 0, 0);
+  font-family: monospace;
+  overflow: hidden;
+  border-right: .15em solid rgba(255, 0, 0);
+  white-space: nowrap; 
+  margin: 0 auto;
+  letter-spacing: .2em;
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+.typewriter p {
+  font-size: xx-large;
+  width: 35%;
+  float: center; 
+  color: rgba(255, 0, 0);
+  font-family: monospace;
+  overflow: hidden;
+  border-right: .15em solid rgba(255, 0, 0);
+  white-space: nowrap; 
+  margin: 0 auto;
+  letter-spacing: .2em;
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 35% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgba(255, 0, 0) }
+}
+
+#sobre{
+  height: 281px;
+  padding: 7px;
+  text-align: justify;
+}
+
+#sobre-img{
+  width: 15%;
+  float: left;
+}
+
+#sobre-img img{
+  width: 181px;
+}
+
+#sobre-text{
+  width: 84%;
+  float: right;
+  font-size: 28px;
+}
+
+#stacks{
+  padding: 7px;
+  text-align: justify;
+}
+
+.stacks-li {
+  float: left;
+  width: 25%;
+}
+
+.stacks-li p{
+  color: rgba(255, 0, 0);
+}
+
+.stacks-div:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#contact{
+  padding: 7px;
+  text-align: justify;
+}
+
+#contact-links{
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+#contact-form{
+  width: 65%;
+  float: right;
+  font-size: 28px;
+}
+
+#nome-input{
+  width: 80%;
+}
+
+#email-input{
+  width: 80%;
+}
+
+.message-input{
+  resize: none;
+  height: 150px;
+  width: 88%;
+  text-align: justify;
+  display: flex;
+}
+
+.icon{
+  width: 20px;
+  height: 15px;
+  background-color: rgb(255, 0, 0);
+}
+
+#sucessful-message{
+  display: none;
+  text-align: center;
+  width: 65%;
+  height: 452px;
+  float: right;
+  font-size: 28px;
+}
