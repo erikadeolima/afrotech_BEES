@@ -30,4 +30,16 @@ function vejaOsPares(){
       resultadoDiv.appendChild(createP);
     }
   }
+
+  /* for(let i = 0; i<=number;i=i+1){
+    if(i%2 ===0){
+      resultadoDiv.innerHTML = "<p id=`${i}`>`${i} é par!`</p>"
+    }
+  } */
+
+  /* for(let i = 0; i<=number;i=i+1){
+    if(i%2 ===0){
+      resultadoDiv.innerHTML = `<p id=${i}>${i} é par!</p>`;
+    }
+  } */
 }
