@@ -1,15 +1,16 @@
 body{
   background-color: black;
   color: white;
+  margin: 8px 8px 8px 8px;
 }
 
 body h1{
-  color: rgba(255, 0, 0);
+  color: rgba(255, 255, 0);
   font-size: xx-large;
 }
 
 body h4{
-  color: rgba(255, 0, 0);
+  color: rgba(255, 255, 0);
   font-size: large;
 }
 
@@ -23,9 +24,13 @@ a:hover{
   text-decoration: none;
 }
 
-#navigation-bar{
-  padding: 7px;
-  text-align: justify;
+.nav-bar {
+  position: fixed;
+  background: black;
+  width: 100%;
+  height:7%;
+  z-index: 999;
+  top: 0px;
 }
 
 .links{
@@ -35,20 +40,20 @@ a:hover{
 }
 
 #link-portifolio{
-  color: rgba(255, 0, 0);
+  color: rgba(255, 255, 0);
 }
 
 #link-contato{
-  color: rgba(255, 0, 0);
+  color: rgba(255, 255, 0);
 }
 
 .typewriter h2 {
   width: 69%;
   float: left; 
-  color: rgba(255, 0, 0);
+  color: rgba(255, 255, 0);
   font-family: monospace;
   overflow: hidden;
-  border-right: .15em solid rgba(255, 0, 0);
+  border-right: .15em solid rgba(255, 255, 0);
   white-space: nowrap; 
   margin: 0 auto;
   letter-spacing: .2em;
@@ -61,10 +66,10 @@ a:hover{
   font-size: xx-large;
   width: 35%;
   float: center; 
-  color: rgba(255, 0, 0);
+  color: rgba(255, 255, 0);
   font-family: monospace;
   overflow: hidden;
-  border-right: .15em solid rgba(255, 0, 0);
+  border-right: .15em solid rgba(255, 255, 0);
   white-space: nowrap; 
   margin: 0 auto;
   letter-spacing: .2em;
@@ -80,12 +85,12 @@ a:hover{
 
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: rgba(255, 0, 0) }
+  50% { border-color: rgba(255, 255, 0) }
 }
 
 #sobre{
-  height: 281px;
-  padding: 7px;
+  height: 365px;
+  padding:15px;
   text-align: justify;
 }
 
@@ -104,8 +109,15 @@ a:hover{
   font-size: 28px;
 }
 
+#portifolio{
+  height: 365px;
+  padding:15px;
+  text-align: justify;
+}
+
 #stacks{
-  padding: 7px;
+  height: 365px;
+  padding:15px;
   text-align: justify;
 }
 
@@ -115,7 +127,7 @@ a:hover{
 }
 
 .stacks-li p{
-  color: rgba(255, 0, 0);
+  color: rgba(255, 255, 0);
 }
 
 .stacks-div:after {
@@ -125,7 +137,8 @@ a:hover{
 }
 
 #contact{
-  padding: 7px;
+  height: 365px;
+  padding: 15px;
   text-align: justify;
 }
 
@@ -160,7 +173,7 @@ a:hover{
 .icon{
   width: 20px;
   height: 15px;
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(255, 255, 0);
 }
 
 #sucessful-message{
