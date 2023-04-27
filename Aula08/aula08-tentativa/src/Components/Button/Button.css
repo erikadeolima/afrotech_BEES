@@ -1,0 +1,17 @@
+#home-button{
+  width:10%;
+  float: left;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 2px;
+}
+
+#menu-button{
+  width: 10%;
+  float: left;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 2px;
+}
