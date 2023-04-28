@@ -3,7 +3,7 @@ import './Divider.css';
 
 function Divider(props){
   return(
-    <divider id={`${props.name}-divider`}/>
+    <hr id={`${props.name}-divider`}/>
   );
 }
 
