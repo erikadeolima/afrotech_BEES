@@ -1,5 +1,5 @@
 import React from "react";
-import './Divider.css';
+import './Picture.css';
 
 function Picture(props){
   return(
