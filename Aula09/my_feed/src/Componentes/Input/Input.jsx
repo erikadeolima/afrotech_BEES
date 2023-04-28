@@ -3,7 +3,11 @@ import './Input.css'
 
 function Input(props){
   return(
-    <input type="text" id={`${props.name}-input`}/>
+    <input 
+    type="text" 
+    id={`${props.name}-input`}
+    placeholder="O que estou pensando?"
+    />
   );
 };
 
