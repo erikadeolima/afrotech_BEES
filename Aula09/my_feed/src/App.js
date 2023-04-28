@@ -5,6 +5,7 @@ import Divider from './Componentes/Divider/Divider';
 import myFeed from './Images/myFeed.svg';
 import Input from './Componentes/Input/Input';
 import Button from './Componentes/Button/Button'
+import Post from './Componentes/Post/Post';
 
 function App() {
   return (
@@ -20,6 +21,11 @@ function App() {
       name="publicar"/>
       <Divider 
       name="post"/>
+      <Post
+      iName="fulano"
+      src=""
+      text="zkjsdlgfhn saflçsk f n zslkfj çisçfjksf \çs ijf slkfjm"
+      />
     </div>
   );
 }
