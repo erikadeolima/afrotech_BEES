@@ -1,0 +1,17 @@
+{
+  "post1": {
+    "userName": "Fulano de Tal",
+    "src": "./src/Images/userSolid.svg",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate felis metus, et hendrerit felis sodales eget. Fusce fringilla vitae est at laoreet. Nulla dui erat, egestas non lectus eget, scelerisque malesuada purus. Suspendisse id fermentum nibh. Etiam laoreet dapibus lectus et pharetra. Vestibulum mollis, sapien pretium vestibulum viverra, nisl."
+  },
+  "post2": {
+    "userName": "Fulano de Tal",
+    "src": "./src/Images/userSolid.svg",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate felis metus, et hendrerit felis sodales eget. Fusce fringilla vitae est at laoreet. Nulla dui erat, egestas non lectus eget, scelerisque malesuada purus. Suspendisse id fermentum nibh. Etiam laoreet dapibus lectus et pharetra. Vestibulum mollis, sapien pretium vestibulum viverra, nisl."
+  },
+  "post3": {
+    "userName": "Fulano de Tal",
+    "src": "./src/Images/userSolid.svg",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate felis metus, et hendrerit felis sodales eget. Fusce fringilla vitae est at laoreet. Nulla dui erat, egestas non lectus eget, scelerisque malesuada purus. Suspendisse id fermentum nibh. Etiam laoreet dapibus lectus et pharetra. Vestibulum mollis, sapien pretium vestibulum viverra, nisl."
+  }
+}

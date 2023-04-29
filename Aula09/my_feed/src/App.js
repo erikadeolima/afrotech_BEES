@@ -6,6 +6,8 @@ import myFeed from './Images/myFeed.svg';
 import Input from './Componentes/Input/Input';
 import Button from './Componentes/Button/Button'
 import Post from './Componentes/Post/Post';
+// import userProfile from './Images/userSolid.svg';
+import postsContent from './untils/postsContent.json';
 
 function App() {
   return (
@@ -21,11 +23,14 @@ function App() {
       name="publicar"/>
       <Divider 
       name="post"/>
-      <Post
-      iName="fulano"
-      src=""
-      text="zkjsdlgfhn saflçsk f n zslkfj çisçfjksf \çs ijf slkfjm"
-      />
+      {Object.keys(postsContent).map(([key, value],i) => (
+        <Post key={i}
+        name={value.userName}
+        src={value.src}
+        userName={value.userName}
+        text={value.text}
+        />
+        ))}
     </div>
   );
 }
