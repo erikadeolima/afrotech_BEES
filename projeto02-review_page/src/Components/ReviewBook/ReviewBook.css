@@ -1,0 +1,15 @@
+.reviewBook{
+  width: 100%;
+  color:rgb(255,255,0);
+  text-align: center;
+}
+
+#reviewed-books{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+}
+#reviewed-books h4{
+  text-align: center;
+}

@@ -1,0 +1,32 @@
+.bookCard-bookcase {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-self: flex-start;
+}
+#book-cover-bookcase {
+  width: 100px;
+  height: 148.359px;
+}
+
+.bookCard-review {
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  margin-bottom: 80px;
+}
+
+#book-cover-reviewed{
+  width: 202.195px;
+  height: 300px;
+  float: left;
+}
+
+#book-review{
+  width: 500px;
+  height: 300px;
+  padding-left: 40px;
+  float: right;
+}
