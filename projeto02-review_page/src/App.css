@@ -1,0 +1,18 @@
+.App{
+  font-family: 'Luckiest Guy';
+  height: 100% !important;
+  text-align: justify;
+  background: rgb(59, 59, 59);
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%; 
+  background-size: cover;
+  overflow-y:auto;
+}
+
+.App hr{
+  color: rgb(255,255,0);
+  border: 3px solid rgb(255, 255, 2);
+  border-radius: 1.5px;
+  width: 95%;
+}
