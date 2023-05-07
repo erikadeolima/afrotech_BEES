@@ -5,9 +5,10 @@ import Button from "../Button/Button";
 
 function Post(props){
   return(
-    <div /* className={`${props.key}-post`} */>
+    <div>
       <div className="image">
         <Picture
+        component="post"
         name={`${props.userName}`}
         src={props.src}
         />

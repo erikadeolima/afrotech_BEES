@@ -3,32 +3,32 @@ import './App.css';
 import Header from './Componentes/Header/Header';
 import Divider from './Componentes/Divider/Divider';
 import myFeed from './Images/myFeed.svg';
-import Input from './Componentes/Input/Input';
-import Button from './Componentes/Button/Button'
+import Publisher from './Componentes/Publisher/Publisher';
 import Post from './Componentes/Post/Post';
-// import userProfile from './Images/userSolid.svg';
-import postsContent from './untils/postsContent.json';
+import userProfile from './Images/userSolid.svg';
+import postsContent from './untils/postsContent.js';
 
 function App() {
   return (
     <div className="App">
-      <Header 
+      <Header
+      component="header"
       name="my_feed"
       src={myFeed}/>
       <Divider 
       name="header"/>
-      <Input 
-      name="post"/>
-      <Button 
-      name="publicar"/>
+      <Publisher
+      component="publisher"
+      />
       <Divider 
       name="post"/>
-      {Object.keys(postsContent).map(([key, value],i) => (
-        <Post key={i}
-        name={value.userName}
-        src={value.src}
-        userName={value.userName}
-        text={value.text}
+      {postsContent.map((post) => (
+        <Post key={post.userName}
+        component="post"
+        name={post.userName}
+        src={userProfile}
+        userName={post.userName}
+        text={post.text}
         />
         ))}
     </div>

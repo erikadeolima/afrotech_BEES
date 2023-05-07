@@ -7,6 +7,7 @@ function Header(props){
     <div className="header">
       <header>
         <Picture
+        component="header"
         name={props.name}
         src={props.src}
         />
