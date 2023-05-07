@@ -1,0 +1,6 @@
+.Home hr{
+  color: rgb(255,255,0);
+  border: 3px solid rgb(255, 255, 2);
+  border-radius: 1.5px;
+  width: 95%;
+}

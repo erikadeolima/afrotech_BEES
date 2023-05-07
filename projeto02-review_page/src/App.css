@@ -8,11 +8,5 @@
   min-height: 100%; 
   background-size: cover;
   overflow-y:auto;
-}
-
-.App hr{
-  color: rgb(255,255,0);
-  border: 3px solid rgb(255, 255, 2);
-  border-radius: 1.5px;
-  width: 95%;
+  text-decoration: none;
 }

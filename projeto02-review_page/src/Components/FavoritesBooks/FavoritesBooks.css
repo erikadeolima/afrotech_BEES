@@ -1,0 +1,12 @@
+.favorites{
+  width: 68%;
+  float: left;
+  height: 300px;
+  color:rgb(255,255,0);
+  text-align: center;
+}
+
+#favorites-books{
+  display: flex;
+  flex-direction: row;
+}
