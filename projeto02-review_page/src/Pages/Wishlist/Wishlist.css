@@ -1,13 +1,18 @@
-.Review {
+.Wishlist{
   width: 100%;
 }
-
 .bloco-1{
   display: flex;
 }
 
-.review {
+.wishlist{
   width: 68%;
   color:rgb(255,255,0);
   text-align: center;
 }
+
+#wishlist-books{
+  display: flex;
+  flex-direction: row;
+}
+

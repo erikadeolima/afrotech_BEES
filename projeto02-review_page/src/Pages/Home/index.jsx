@@ -14,14 +14,19 @@ function Home() {
         imageProfile={<CgBee />}
       />
       <hr />
-      <div className="test-area">
+      <div className="bloco-1">
         <Menu />
         <Bookcase />
       </div>
       <hr />
-      <ReviewBook />
+      <div className="bloco-2">
+        <ReviewBook />
+      </div>
       <hr />
-      <RecomendedBooks />
+      <div className="bloco-3">
+        <RecomendedBooks />
+      </div>
+
 
     </div>
   )

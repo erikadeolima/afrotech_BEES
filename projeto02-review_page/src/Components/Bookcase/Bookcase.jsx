@@ -1,20 +1,28 @@
-import React from "react";
-import readersInfo from '../../untils/readersInfo';
+import React, { useContext, useEffect, useState } from "react";
 import BookCard from '../BookCard/BookCard';
+import storage from "../../Context/Context";
 import './BookCase.css';
 
 function Bookcase() {
+  const { getBookCaseFromLS } = useContext(storage);
+  const [bookCase, setBookCase] = useState([]);
+
+  useEffect(() => {
+    const bookCase = getBookCaseFromLS();
+    setBookCase(bookCase);
+  }, []);
+
   return (
     <div className="bookcase">
       <h1 id="bookcase-title">Minha Estante</h1>
       <div id="bookcase-books">
-        {readersInfo[0].bookcase.map((book) => (
+        {bookCase.map((book) => (
           <BookCard
             key={book.titleBook}
             id={book.id}
             image={book.src}
             legend={book.titleBook}
-            bookcase={true}
+            type={"bookcase"}
             stars={book.stars}
           />
         ))}

@@ -13,8 +13,8 @@ function Menu() {
           </Link>
         </li>
         <li>
-          <Link className="menu-li-item" to="/whishlist">
-            <p><span id='whishlist-icon'>{<AiOutlineGift />}</span> Desejados</p></Link>
+          <Link className="menu-li-item" to="/wishlist">
+            <p><span id='wishlist-icon'>{<AiOutlineGift />}</span> Desejados</p></Link>
 
         </li>
         <li>

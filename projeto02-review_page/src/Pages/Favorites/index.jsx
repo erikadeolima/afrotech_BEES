@@ -7,11 +7,11 @@ import FavoritesBook from "../../Components/FavoritesBooks/FavoritesBooks";
 
 function Favorites() {
   return (
-    <div className="favorites">
+    <div className="Favorites">
       <Header
         imageProfile={<CgBee />}
       />
-      <div className="test-area">
+      <div className="bloco-1">
         <Menu />
         <FavoritesBook />
       </div>

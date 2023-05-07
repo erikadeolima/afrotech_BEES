@@ -17,7 +17,7 @@ function ReviewBook(props) {
         selectedItem={readersInfo[0].bookcase[currentIndex]}
         onChange={handleChange}
         className="carousel-container"
-        id="reviewed-books"
+        id="review-books"
       >
         {readersInfo[0].bookcase.map((book, i) => (
           <BookCard

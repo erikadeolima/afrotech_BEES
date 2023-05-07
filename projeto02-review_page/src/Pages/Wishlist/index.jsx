@@ -3,45 +3,44 @@ import Header from "../../Components/Header/Header";
 import Menu from "../../Components/Menu/Menu";
 import BookCard from "../../Components/BookCard/BookCard";
 import { CgBee } from "react-icons/cg";
-import './Review.css';
+import './Wishlist.css';
 import storage from "../../Context/Context";
 
-function Review() {
-  const { getBookCaseFromLS } = useContext(storage);
-  const [bookCase, setBookCase] = useState([]);
+function Wishlist() {
+  const {
+    getWishListFromLS } = useContext(storage);
+  const [wishList, setWishlist] = useState([]);
 
   useEffect(() => {
-    const bookCase = getBookCaseFromLS();
-    setBookCase(bookCase);
+    const teste = getWishListFromLS();
+    setWishlist(teste);
   }, []);
   return (
-    <div className="Review">
+    <div className="Wishlist">
       <Header
         imageProfile={<CgBee />}
       />
       <div className="bloco-1">
         <Menu />
-        <div className="review">
-          <h1 id="review-title">Minhas Resenhas</h1>
-          {<div id="review-books">
+        <div className="wishlist">
+          <h1 id="wishlist-title">Desejados</h1>
+          <div id="wishlist-books">
             {
-              bookCase.map((book) => (
+              wishList.map((book) => (
                 <BookCard
                   key={book.titleBook}
                   id={book.id}
                   image={book.src}
-                  legend={book.titleBook}
                   titleBook={book.titleBook}
-                  type={"review-detail"}
-                  reviewBook={book.reviewBook}
+                  type={"wishlist"}
                 />
               ))
             }
-          </div>}
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default Review;
+export default Wishlist;

@@ -1,10 +1,12 @@
 .menu-div {
   display: flex;
-  width: 30%;
   float: left;
   height: 300px;
 }
-
+.menu-div ul{
+  width: 400px;
+  height: 300px;
+}
 .menu-div li{
   color: rbg(255,255,0);
   font-size: 1.5rem;
