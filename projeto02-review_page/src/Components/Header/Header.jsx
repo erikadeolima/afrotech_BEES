@@ -4,12 +4,12 @@ import storage from "../../Context/Context";
 import './Header.css';
 
 function Header(props) {
-  const { toRead, readed, username, getUser, getReaded } = useContext(storage);
+  const { toRead, readed, username, setUserInfo } = useContext(storage);
+
 
   useEffect(() => {
-    getUser();
-    getReaded();
-  }, [readed, toRead]);
+    setUserInfo();
+  }, []);
   return (
     <div className="header">
       <Link to="/">

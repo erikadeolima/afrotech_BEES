@@ -1,21 +1,29 @@
-import React from 'react';
-import BooksInfo from '../../untils/booksInfo';
-import BookCard from '../BookCard/BookCard'
+import React, { useContext, useEffect } from 'react';
+import BookCard from '../BookCard/BookCard';
 import './Recomended.css';
+import storage from "../../Context/Context";
 
-function RecomendedReviewBook(props) {
+function RecomendedReviewBook() {
+  const { setBooksInfoInLS,
+    getBooksInfoFromLS, booksInfo } = useContext(storage);
+
+  useEffect(() => {
+    setBooksInfoInLS()
+    getBooksInfoFromLS();
+  }, []);
+
   return (
     <div className="recomendedBook">
       <h1 id="recomendedBook-title">Recomendados</h1>
       <div id="recomendedBook-books">
-        {BooksInfo.map((book) => (
+        {booksInfo.map((book) => (
           <BookCard
             key={book.titleBook}
             id={book.id}
             image={book.src}
             legend={book.titleBook}
             titleBook={book.titleBook}
-            reviewBook={book.reviewBook}
+            type={"recommended"}
           />
         ))}
       </div>

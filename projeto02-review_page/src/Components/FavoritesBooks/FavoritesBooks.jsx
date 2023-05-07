@@ -17,7 +17,7 @@ function FavoritesBook() {
                 id={book.id}
                 image={book.src}
                 legend={book.titleBook}
-                favorites={true}
+                type={"favorites"}
                 stars={book.stars}
               />
             ))

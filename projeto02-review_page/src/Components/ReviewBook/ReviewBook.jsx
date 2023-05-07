@@ -26,7 +26,7 @@ function ReviewBook(props) {
             image={book.src}
             legend={book.titleBook}
             titleBook={book.titleBook}
-            review={true}
+            type={"review"}
             reviewBook={book.reviewBook}
           />
         ))}
