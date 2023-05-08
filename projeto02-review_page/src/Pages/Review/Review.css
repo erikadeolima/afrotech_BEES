@@ -1,0 +1,13 @@
+.Review {
+  width: 100%;
+}
+
+.bloco-1{
+  display: flex;
+}
+
+.review {
+  width: 68%;
+  color:rgb(255,255,0);
+  text-align: center;
+}

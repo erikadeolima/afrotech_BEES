@@ -7,6 +7,8 @@ function Input(props){
     type="text" 
     id={`${props.name}-input`}
     placeholder="O que estou pensando?"
+    value={props.text}
+    onChange={props.change}
     />
   );
 };

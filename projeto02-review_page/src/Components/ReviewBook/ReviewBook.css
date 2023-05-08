@@ -1,9 +1,7 @@
 .reviewBook{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
   width: 100%;
   color:rgb(255,255,0);
   text-align: center;
@@ -11,19 +9,9 @@
 }
 
 .carousel-container {
-  margin: 4vh;
   max-width: 750px;
 }
 .carousel-status font{
   color:rgb(255,255,0);
-  font-size: medium;
-}
-
-#reviewed-books{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-#reviewed-books h4{
-  text-align: center;
+  font-size: sm;
 }

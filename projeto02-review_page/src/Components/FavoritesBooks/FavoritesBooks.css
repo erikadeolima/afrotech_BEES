@@ -1,12 +1,12 @@
-.bookcase{
-  width: 65%;
+.favorites{
+  width: 60%;
   float: left;
   height: 300px;
   color:rgb(255,255,0);
   text-align: center;
 }
 
-#bookcase-books{
+#favorites-books{
   display: flex;
   flex-direction: row;
 }

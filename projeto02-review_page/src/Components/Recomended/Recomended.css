@@ -1,0 +1,18 @@
+.recommendedBook{
+  color:rgb(255,255,0);
+  text-align: center;
+}
+#recommendedBook-books{
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 50px;
+}
+#recommendedBook-books{
+  display: flex;
+  flex-direction: row;
+}
+.recommendedBookBtn{
+  background-color: transparent;
+  color: rgb(255,255,0);
+}

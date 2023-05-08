@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
+import { Link } from 'react-router-dom';
+import storage from "../../Context/Context";
 import './Header.css';
 
-function Header(props){
-  return(
+function Header(props) {
+  const { toRead, readed, username, setUserInfo } = useContext(storage);
+
+
+  useEffect(() => {
+    setUserInfo();
+  }, []);
+  return (
     <div className="header">
-    <span id="header-profile-img">{props.imageProfile}</span>
-    <h1 id="header-title">{props.userName}</h1>
-    <p id="read-books">{props.readBooks}<span> lidos</span></p>
-    <p id="to-read-books">{props.toReadBooks}<span>vou ler</span></p>
-  </div>
+      <Link to="/">
+        <span id="header-profile-img">{props.imageProfile}</span>
+      </Link>
+      <h1 id="header-title">{username} </h1>
+      <p id="read-books">{readed}<span> lidos</span></p>
+      <p id="to-read-books">{toRead}<span>vou ler</span></p>
+    </div>
   );
 };
 

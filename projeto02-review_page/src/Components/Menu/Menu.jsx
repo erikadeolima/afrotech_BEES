@@ -1,24 +1,33 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './Menu.css';
-import {AiOutlineHeart, AiOutlineGift, AiOutlineStar, AiOutlineComment} from 'react-icons/ai';
+import { AiOutlineHeart, AiOutlineGift, AiOutlineStar, AiOutlineComment, AiOutlineHome } from 'react-icons/ai';
 
-function Menu(){
-  return(
+function Menu() {
+  return (
     <div className="menu-div">
       <ul>
-      <li>
-        <p><span id='favorite-icon'>{<AiOutlineHeart/>}</span>Favoritos</p>
-      </li>
-      <li>
-        <p><span id='whishlist-icon'>{<AiOutlineGift/>}</span>Desejados</p>
-      </li>
-      <li>
-        <p><span id='rated-icon'>{<AiOutlineStar/>}</span>Avaliados</p>
-      </li>
-      <li>
-        <p><span id='reviewed-icon'>{<AiOutlineComment/>}</span>Resenhas</p>
-      </li>
-    </ul>
+        <li>
+          <Link className="menu-li-item" to="/favorites">
+            <p><span id='favorite-icon'>{<AiOutlineHeart />}</span> Favoritos</p>
+          </Link>
+        </li>
+        <li>
+          <Link className="menu-li-item" to="/wishlist">
+            <p><span id='wishlist-icon'>{<AiOutlineGift />}</span> Desejados</p></Link>
+
+        </li>
+        <li>
+          <Link className="menu-li-item" to="/rated">
+            <p><span id='rated-icon'>{<AiOutlineStar />}</span> Avaliados</p></Link>
+
+        </li>
+        <li>
+          <Link className="menu-li-item" to="/reviews">
+            <p><span id='reviewed-icon'>{<AiOutlineComment />}</span> Resenhas</p></Link>
+
+        </li>
+      </ul>
     </div>
   )
 }

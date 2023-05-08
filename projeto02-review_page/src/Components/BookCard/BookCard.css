@@ -4,29 +4,51 @@
   margin: 20px;
   align-self: flex-start;
 }
-#book-cover-bookcase {
+.book-cover-bookcase {
   width: 100px;
-  height: 148.359px;
 }
 
 .bookCard-review {
-  display: block;
-  height: 150px;
-  justify-content: center;
-  margin: 10px;
-  padding: 30px;
-  margin-bottom: 80px;
+  width: 70%;
+  color: rgb(255,255,0);
+  text-align: justify;
+  margin-left: 90px;
+  margin-bottom: 90px;
 }
 
-#book-cover-reviewed{
-  width: 101.10px;
+.book-cover-review {
+  width: 101.10px !important;
   height: 150px;
-  float: left;
 }
 
-#book-review{
-  width: 500px;
+.bookCard-recommended {
+  color: rgb(255,255,0);
+  text-align: center;
+  padding: 17px;
+}
+.book-cover-recommended{
+  width: 202.20px !important;
   height: 300px;
-  padding-left: 40px;
-  float: right;
+}
+
+.bookCard-favorites {
+  width: 25%;
+  color: rgb(255,255,0);
+  text-align: center;
+  margin-top: 17px;
+}
+.book-cover-favorites{
+  width: 202.20px !important;
+  height: 300px;
+}
+
+.bookCard-wishlist {
+  width: 25%;
+  color: rgb(255,255,0);
+  text-align: center;
+  padding: 10px;
+}
+.book-cover-wishlist{
+  width: 202.20px !important;
+  height: 300px;
 }
